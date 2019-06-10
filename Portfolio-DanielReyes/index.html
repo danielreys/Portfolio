@@ -1,0 +1,500 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Portfolio</title>
+    <link rel="icon" href="./img/icons/logoIco.ico" type="image/x-icon" />
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/animate.min.css" rel="stylesheet">
+    <link href="css/aos.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/imagehover.min.css">
+</head>
+
+<body>
+    <!-- Loader -->
+    <div class="preloader-wrapper">
+        <div class="preloader">
+            <img id="imgPreLoader" src="./img/icons/logo.svg" alt="Logo Daniel Reyes">
+        </div>
+    </div>
+    <!-- End Loader -->
+
+    <!--Modal-->
+    <div id="simpleModal" class="modal">
+        <div class="modal-content">
+            <div class="modal-header">  
+                <h4 class="modal-title"></h4>           
+                <span id="closeBtn">&times;</span>
+            </div>
+            <div class="modal-body">   
+                <p class="modal-words"></p>             
+            </div>
+        </div>
+    </div>
+    <!-- End Modal-->
+
+    <!-- navbar -->
+    <header class="navbar-fixed-top">
+        <nav>
+            <ul>
+                <li><a href="#about">About me</a></li>
+                <li><a href="#experience">Knowledge</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <!-- end navbar -->
+
+    <!-- voer -->
+    <div class="section" id="home" data-stellar-background-ratio="0.5">
+        <div class="container">
+            <div class="disply-table">
+                <div class="table-cell" data-aos="fade-up" data-aos-delay="0">
+                    <h1> I'm a <span id="escribir"></span></h1>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- ./cover -->
+
+    <!-- about Me -->
+    <div class="section" id="about" data-stellar-background-ratio="0.5">
+        <div class="container">
+            <div class="row titulc">
+                <div class="col-md-6" data-aos="fade-up">
+                    <h1>Meet me in 4 steps</h1>
+                </div>
+                <div class="col-md-6" data-aos="fade-up">
+                    <span><img class="bigLogo" src="./img/icons/logo.svg" alt="logo Daniel Reyes"></span>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-6" data-aos="fade-up">
+                    <h4 style="margin-top:50px;" class="number">01</h4>
+                    <h3 class="size-50">Who am <br /> I?</h3>
+                    <p id="txtAboutMe" data-in-effect="rollIn">My name is Daniel Reyes, I'm twenty years old. In my
+                        free time I enjoy things like play videogames, listen to my favorite music, watch the NBA,
+                        watch some anime, etc.</p><br>
+                    <p>Listen to my favorite bands helps me a lot when I'm trying to do some work, it's something I
+                        need to do everyday, music is always necessary!</p>
+                    <br>
+                    <p data-in-effect="rollIn"> I define myself as a frond-end and back-end developer, although my
+                        preference is working as a back-end, but that doesn't mean I don't enjoy dealing with frond-end
+                        too :)</p> <br>
+                    <p data-in-effect="rollIn">Currently I'm searching for a job oportunity to start my work carrer, because I'm finishing my studies now at Centre d'estudis Politècnics. </p>
+                    <img src="img/SobreMi/signature.svg" width="230" alt="danielSignature" />
+                </div>
+                <div class="col-md-6 about-img-div imgfav" id="imagenesFav">
+                    <img class="niceImages img-responsive" data-aos="fade-right" data-aos-offset="200" data-aos-delay="50"
+                        alt="nbaPlayers" data-aos-duration="1000" style="height:120px;width:auto;" src="./img/SobreMi/nba.jpg">
+                    <img class="niceImages img-responsive" data-aos="flip-right" data-aos-offset="200" data-aos-delay="50"
+                        alt="starWars" data-aos-duration="1000" style="height:120px;width:auto;margin-top:10px;" src="./img/SobreMi/star_wars.png">
+                    <img class="niceImages img-responsive" data-aos="fade-down-right" data-aos-offset="200"
+                        data-aos-delay="50" alt="greenDay" data-aos-duration="1000" style="height:120px;width:auto;margin-top:10px;"
+                        src="./img/SobreMi/greenDay.jpg">
+                    <img class="niceImages img-responsive" data-aos="slide-up" data-aos-offset="200" data-aos-delay="50"
+                        alt="sum41" data-aos-duration="1000" style="height:120px;width:auto;margin-top:10px;" src="./img/SobreMi/sum41.jpg">
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- ./about -->
+
+    <!-- experience  -->
+    <div class="section" id="experience">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <h4 class="number">02</h4>
+                    <h3 class="size-50">Knowledge</h3>
+                    <div class="h-50">Here are some of the languages, frameworks, IDE, or just useful tools I've
+                        worked
+                        with :D</div>
+                </div>
+                <div class="col-md-12" id="misExp">
+                    <figure class="imghvr-fade bordercard">
+                        <img data-aos="flip-right" src="./img/tecnologias/angularjs-plain.svg" class="tecnologias" alt="angular">
+                        <figcaption>
+                            <p>I've used angular to develop some webs in class.</p>
+                            <p>It's one of my favorites.</p>
+                        </figcaption>
+                    </figure>
+                    <figure class="imghvr-fade bordercard">
+                        <img data-aos="flip-right" src="./img/tecnologias/android-plain.svg" class="tecnologias" alt="android">
+                        <figcaption>
+                            <p> I've used Android to create some apps, like for example, my project of DAM.</p>
+                            <p> It was called edushare.</p>
+                        </figcaption>
+                    </figure>
+                    <figure class="imghvr-fade bordercard">
+                        <img data-aos="flip-left" src="./img/tecnologias/apache-line.svg" class="tecnologias" alt="apache">
+                        <figcaption>
+                            In Web development, I've learned how to configure, sending files with ftp,use of Tomcat,
+                            proxys, etc.
+                        </figcaption>
+                    </figure>
+                    <figure class="imghvr-fade bordercard">
+                        <img data-aos="flip-left" src="./img/tecnologias/bitbucket-original-wordmark.svg" class="tecnologias"
+                            alt="bitbucket">
+                        <figcaption>
+                            Learned how to use it during my first project of DAM (Edushare)in Android for the version
+                            control.
+                        </figcaption>
+                    </figure>
+                    <figure class="imghvr-fade bordercard">
+                        <img data-aos="flip-right" src="./img/tecnologias/bootstrap-plain.svg" class="tecnologias" alt="bootstrap">
+                        <figcaption>
+                            <p>I use Bootstrap to make some of my webs responsive, is fast to write and easier!</p>
+                        </figcaption>
+                    </figure>
+                    <figure class="imghvr-fade bordercard">
+                        <img data-aos="flip-right" src="./img/tecnologias/c-line.svg" class="tecnologias" alt="c">
+                        <figcaption>
+                            <p>My programmer teacher in DAM, taught me to write code, with C! did some cool programs
+                                and
+                                operations with it.</p>
+                        </figcaption>
+                    </figure>
+                    <figure class="imghvr-fade bordercard">
+                        <img data-aos="flip-left" src="./img/tecnologias/csharp-plain.svg" class="tecnologias" alt="csharp">
+                        <figcaption>
+                            <p>C# is one of my favorite languages.</p>
+                            <p>I even made a management desktop app for a company of private transport.</p>
+                        </figcaption>
+                    </figure>
+                    <figure class="imghvr-fade bordercard">
+                        <img data-aos="flip-left" src="./img/tecnologias/d3js-plain.svg" class="tecnologias" alt="d3js">
+                        <figcaption>
+                            <p>I used d3js in a project we made in group in class, made some cool charts with it (also
+                                with
+                                google charts).</p>
+                        </figcaption>
+                    </figure>
+                    <figure class="imghvr-fade bordercard">
+                        <img data-aos="flip-right" src="./img/tecnologias/github-original.svg" class="tecnologias" alt="github">
+                        <figcaption>
+                            <p>This year, at least in class, we used github all the time. Anyway i know some of the git
+                                commands to use the console instead.</p>
+                        </figcaption>
+                    </figure>
+                    <figure class="imghvr-fade bordercard">
+                        <img data-aos="flip-right" src="./img/tecnologias/illustrator-line.svg" class="tecnologias" alt="ilustrator">
+                        <figcaption>
+                            <p>In design, I'm learning to use ilustrator, which is really useful to satisfy graphic
+                                needs</p>
+                        </figcaption>
+                    </figure>
+                    <figure class="imghvr-fade bordercard">
+                        <img data-aos="flip-left" src="./img/tecnologias/inkscape-plain.svg" class="tecnologias" alt="inkscape">
+                        <figcaption>
+                            <p>Same than with ilustrator, made a couple edited vectorized imatges.</p>
+                        </figcaption>
+                    </figure>
+                    <figure class="imghvr-fade bordercard">
+                        <img data-aos="flip-left" src="./img/tecnologias/java-plain.svg" class="tecnologias" alt="java">
+                        <figcaption>
+                            <p>At the 2nd year of DAM, we made cool aplications with java, since just operators until
+                                complex apps with lot of things involved.</p>
+                        </figcaption>
+                    </figure>
+                    <figure class="imghvr-fade bordercard">
+                        <img data-aos="flip-right" src="./img/tecnologias/javascript-plain.svg" class="tecnologias" alt="javascript">
+                        <figcaption>
+                            <p>All this year I've been improving my skills in javascript.</p>
+                        </figcaption>
+                    </figure>
+                    <figure class="imghvr-fade bordercard">
+                        <img data-aos="flip-right" src="./img/tecnologias/jquery-plain.svg" class="tecnologias" alt="jquery">
+                        <figcaption>
+                            <p>Basically jquery saves my life in some cases, because it's really helpful while
+                                developing a
+                                web app.</p>
+                        </figcaption>
+                    </figure>
+                    <figure class="imghvr-fade bordercard">
+                        <img data-aos="flip-left" src="./img/tecnologias/linux-plain.svg" class="tecnologias" alt="linux">
+                        <figcaption>
+                            <p>I learned in class about how linux is, but I started to love it, when in my practices in
+                                a
+                                company. I use it daily. </p>
+                        </figcaption>
+                    </figure>
+                    <figure class="imghvr-fade bordercard">
+                        <img data-aos="flip-left" src="./img/tecnologias/mysql-plain.svg" class="tecnologias" alt="mysql">
+                        <figcaption>
+                            <p>It's been like 3 years i worked with mysql, so now I pretty much know how it works!</p>
+                        </figcaption>
+                    </figure>
+                    <figure class="imghvr-fade bordercard">
+                        <img data-aos="flip-right" src="./img/tecnologias/phpstorm-plain.svg" class="tecnologias" alt="phpstorm">
+                        <figcaption>
+                            <p>This IDE (from jetbrains) is the one I use while doing my practices in my company. It's
+                                really useful</p>
+                        </figcaption>
+                    </figure>
+                    <figure class="imghvr-fade bordercard">
+                        <img data-aos="flip-right" src="./img/tecnologias/postgresql-plain.svg" class="tecnologias" alt="postgreSql">
+                        <figcaption>
+                            <p>PostgreSql is the one used in the platform I develop in my company.</p>
+                        </figcaption>
+                    </figure>
+                    <figure class="imghvr-fade bordercard">
+                        <img data-aos="flip-left" src="./img/tecnologias/sass-original.svg" class="tecnologias" alt="sass">
+                        <figcaption>
+                            <p>Sass & Scss are very useful, I used it most of the time in angular projects.</p>
+                        </figcaption>
+                    </figure>
+                    <figure class="imghvr-fade bordercard">
+                        <img data-aos="flip-left" src="./img/tecnologias/typescript-plain.svg" class="tecnologias" alt="typescript">
+                        <figcaption>
+                            <p>I dealed with typescript in angular, very clear the code of a page component.</p>
+                        </figcaption>
+                    </figure>
+                    <figure class="imghvr-fade bordercard">
+                        <img data-aos="flip-right" src="./img/tecnologias/ionic-original.svg" class="tecnologias" alt="ionic">
+                        <figcaption>
+                            <p>I developed an ionic app about listing reddit posts, using ionic which basically helps
+                                you to do an app easily.</p>
+                        </figcaption>
+                    </figure>
+                    <figure class="imghvr-fade bordercard">
+                        <img data-aos="flip-right" src="./img/tecnologias/symfony-original.svg" class="tecnologias" alt="symfony">
+                        <figcaption>
+                            <p>Symfony is a framework that helps you to write php code, just like laravel. </p>
+                        </figcaption>
+                    </figure>
+                    <figure class="imghvr-fade bordercard">
+                        <img data-aos="flip-left" src="./img/tecnologias/visualstudio-plain.svg" class="tecnologias"
+                            alt="visualStudio">
+                        <figcaption>
+                            <p>Visual studio && visual studio code are my favorite IDE. But some others I've tried are
+                                nice too :) </p>
+                        </figcaption>
+                    </figure>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- ./experience -->
+
+    <!-- projects -->
+    <div class="section" id="projects">
+        <div class="container">
+            <div class="row">
+                <!-- <h2 style="float:left;">DAM</h2>
+                    <h2 style="float:right;">DAW</h2> -->
+                <div class="col-md-12 text-center">
+                    <h4 class="text-center number">03</h4>
+                    <div>
+                        <h3 class="size-50">Projects</h3>
+                        <div class="h-50">This are my remarkable projects of this three years!</div>
+                        <div class="col-md-6">
+                            <div id="pirateTeaParty" class="borderp tarjetas" data-aos="fade-right" data-aos-offset="200"
+                                data-aos-delay="50" data-aos-duration="2500" data-aos-easing="ease-in-out"
+                                data-aos-mirror="true" data-aos-once="false">
+                                <img src="./img/proyectos/pirateTeaParty.png" class="proyect" alt="PirateImagePagePreview">
+                                <h4 class="text-center"> PirateTeaParty</h4>
+                                <div style="display:flex;justify-content:center;">
+                                    <a href="https://github.com/MasterLice/PirateTeaParty" target="_blank">
+                                        <img src="./img/icons/github.png" alt="githubIcon(basically a control version)">
+                                    </a>
+                                    <a href="http://daw2a04.abp-politecnics.com/pirateTeaParty/index.php" target="_blank">
+                                        <img src="./img/icons/web.png" class="icon" alt="webIcon">
+                                    </a>
+                                    <button id="0" class="button modalBtn">Info</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div id="spam" class="borderp tarjetas" data-aos="fade-right" data-aos-offset="200"
+                                data-aos-delay="50" data-aos-duration="2500" data-aos-easing="ease-in-out"
+                                data-aos-mirror="true" data-aos-once="false">
+                                <img src="./img/proyectos/spam.png" class="proyect" alt="SpamWebsitePreview">
+                                <h4 class="text-center">Spam</h4>
+                                <div style="display:flex;justify-content:center;">
+                                    <a href="https://github.com/jordipe77/DB" target="_blank">
+                                        <img src="./img/icons/github.png" alt="githubIcon(basically a control version)">
+                                    </a>
+                                    <a href="http://www.abp-politecnics.com/2019/daw/projecte02/dw03/public/" target="_blank">
+                                        <img src="./img/icons/web.png" class="icon" alt="webIcon">
+                                    </a>
+                                    <button id="1" class="button modalBtn">Info</button>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-md-6">
+                            <div id="redditList" class="borderp tarjetas" data-aos="fade-left" data-aos-offset="200"
+                                data-aos-delay="50" data-aos-duration="2500" data-aos-easing="ease-in-out"
+                                data-aos-mirror="true" data-aos-once="false">
+                                <img src="./img/proyectos/redditList.png" class="proyect" alt="redditListAppScreenShoot">
+                                <h4 class="text-center">RedditList</h4>
+                                <div style="display:flex;justify-content:center;">
+                                    <a href="https://github.com/danielreys/redditList" target="_blank">
+                                        <img src="./img/icons/github.png" alt="githubIcon(basically a control version)">
+                                    </a>
+                                    <img src="./img/icons/noweb.png" class="icon" alt="IconNoWebAvailable">
+                                    <button id="2" class="button modalBtn">Info</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div id="edushare" class="borderp tarjetas" data-aos="fade-left" data-aos-offset="200"
+                                data-aos-delay="50" data-aos-duration="2500" data-aos-easing="ease-in-out"
+                                data-aos-mirror="true" data-aos-once="false">
+                                <img src="./img/proyectos/edushare.PNG" class="proyect" alt="edushareProjectPreview">
+                                <h4 class="text-center">Edushare</h4>
+                                <div style="display:flex;justify-content:center;">
+                                    <img src="./img/icons/noGithub.png" alt="IconNoGithubAvailable">
+                                    <img src="./img/icons/noweb.png" class="icon" alt="IconNoWebAvailable">
+                                    <button id="3" class="button modalBtn">Info</button>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-md-6">
+                            <div id="transportesLinq" class="borderp tarjetas" data-aos="fade-right" data-aos-offset="200"
+                                data-aos-delay="50" data-aos-duration="2500" data-aos-easing="ease-in-out"
+                                data-aos-mirror="true" data-aos-once="false">
+                                <img src="./img/proyectos/conductores.png" class="proyect" alt="conductoresAppPreview">
+                                <h4 class="text-center">App c# Transporte</h4>
+                                <div style="display:flex;justify-content:center;">
+                                    <img src="./img/icons/noGithub.png" alt="IconNoGithubAvailable">
+                                    <img src="./img/icons/noweb.png" class="icon" alt="IconNoWebAvailable">
+                                    <button  id="4" class="button modalBtn">Info</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div id="GameList" class="borderp tarjetas" data-aos="fade-right" data-aos-offset="200"
+                                data-aos-delay="50" data-aos-duration="2500" data-aos-easing="ease-in-out"
+                                data-aos-mirror="true" data-aos-once="false">
+                                <img src="./img/proyectos/gameList.png" style="height:300px;" alt="gameListAppPreview">
+                                <h4 class="text-center">GameList</h4>
+                                <div style="display:flex;justify-content:center;">
+                                    <img src="./img/icons/noGithub.png" alt="IconNoGithubAvailable">
+                                    <img src="./img/icons/noweb.png" class="icon" alt="IconNoWebAvailable">
+                                    <button id="5" class="button modalBtn">Info</button>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="col-md-12 expli">
+                    <h4 class="text-center text-white">Video Explicativo</h4>
+                    <div class="video-enlaces text-center" id="optionsVideo">
+                        <a class="btn btn-primary" data-comienzo="00" data-final="56" id="intro" href="#" role="button">PirateTeaParty</a>
+                        <a class="btn btn-warning" data-comienzo="59" data-final="247" id="adopcion" href="#" role="button">Spam</a>
+                        <a class="btn btn-success" data-comienzo="0" data-final="247" id="donacion" href="#" role="button">Todo
+                            el video</a>
+                    </div>
+                    <div id="video" class="text-center">
+                        <video controls crossorigin="anonymous" id="miVideo" class="embed-responsive" width="1280"
+                            height="720">
+                            <source src="./video/multimediaFinal.mp4">
+                            Your browser do not support HTML5 video.
+                        </video>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- ./projects -->
+
+    <!-- contact -->
+    <div class="section" id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12 text-center">
+                    <h4 class="number">04</h4>
+                    <h3 class="size-50">Contact</h3>
+                </div>
+                <div class="col-md-12" id="socialNetworks" data-aos="fade-up">
+                    <h2>Take a look to my CV</h2>
+                    <a class="btn btn-success ml-3" href="./files/danielReyesCv.pdf" download>
+                        Watch CV
+                    </a>
+                    <h2>Phone Number</h2>
+                    <h3>+ 34 603819794</h3>
+                    <h2>Email</h2>
+                    <h3>danireyes5015@gmail.com</h3>
+
+                    <h2>Follow my Social Networks</h2>
+
+                    <ul class="social">
+                        <li>
+                            <h4>Linkedin</h4>
+                            <a href="https://www.linkedin.com/in/danieldev98/" target="_blank">
+                                <img class="mini-icon" src="./img/icons/linkedin.svg" alt="linkedin link">
+                            </a>
+                        </li>
+                        <li>
+                            <h4>Instagram</h4>
+                            <a href="https://www.instagram.com/danielre55/" target="_blank">
+                                <img class="mini-icon" src="./img/icons/instagram.svg" alt="instagram link">
+                            </a>
+                        </li>
+                        <li>
+                            <h4>Telegram</h4>
+                            <a href=" https://t.me/danireyesdev" target="_blank">
+                                <img class="mini-icon" src="./img/icons/telegram.svg" alt="twitter link">
+                            </a>
+                        </li>
+                        <li>
+                            <h4>Twitter</h4>
+                            <a href="https://twitter.com/DanielDev98" target="_blank">
+                                <img class="mini-icon" src="./img/icons/twitter.svg" alt="twitter link">
+                            </a>
+
+                        </li>
+
+                    </ul>
+
+                </div>
+                <div class="col-md-12">
+                    <div class="text-center mb-3">
+                        <a href="https://validator.w3.org/nu/?doc=http://danielreyes.es" target="_blank">
+                            <img class="checkIcons" src="./img/icons/w3xhtml.png" alt="validator html link">
+                        </a>
+                        <a href="https://jigsaw.w3.org/css-validator/validator?uri=danielreyes.es" target="_blank">
+                            <img class="checkIcons" src="./img/icons/w3css.png" alt="validator css link">
+                        </a>
+                    </div>
+                    <div class="text-center">
+                        Made with 💙 by Daniel Reyes
+                    </div>
+                    <div class="text-center">Icons made by <a href="https://www.flaticon.com/authors/freepik" title="Freepik">Freepik</a>
+                        from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a> is licensed by
+                        <a href="http://creativecommons.org/licenses/by/3.0/" title="Creative Commons BY 3.0" target="_blank">CC
+                            3.0 BY</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- jQuery -->
+    <script src="js/jquery.js"></script>
+    <!--  libraries -->
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/plugins.js"></script>
+    <script src="js/aos.js"></script>
+    <script src="js/jquery.form.js"></script>
+    <script src="js/jquery.validate.min.js"></script>
+    <script src="js/typed.js"></script>
+    <script src="js/jquery.fittext.js"></script>
+    <script src="js/jquery.lettering.js"></script>
+    <script src="js//jquery.textillate.js"></script>
+    <!-- my scripts  -->
+    <script src="js/tools.js"></script>
+    <script src="js/events.js"></script>
+    <script src="js/videoInteractivo.js"></script>
+</body>
+
+</html>
